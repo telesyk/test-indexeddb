@@ -1,0 +1,14 @@
+{
+  "name": "indexed-db",
+  "version": "1.0.0",
+  "license": "MIT",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "parcel": "^2.11.0"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
+}
