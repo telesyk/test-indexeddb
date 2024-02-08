@@ -18,6 +18,7 @@ const indexedDB = window.indexedDB ||
   window.msIndexedDB ||
   window.shimIndexedDB;
 
+const containerElement = document.querySelector('.container')
 const formElement = document.querySelector('#cars')
 formElement.addEventListener('submit', handleSubmit)
 
@@ -32,8 +33,7 @@ function updateStore(data) {
 }
 
 function updateUI(dataArr) {
-  const containerElement = document.querySelector('.container')
-  const currentTableElement = document.querySelector('[table]')
+  const currentTableElement = containerElement.querySelector('table')
 
   if (!!currentTableElement) currentTableElement.remove()
   
